@@ -9,12 +9,13 @@ import SwiftUI
 import RealityKit
 import RealityKitContent
 
+/// コンテンツ
 struct ContentView: View {
 
-    @State private var showImmersiveSpace = false
+    @State private var showImmersiveSpace = false // ImmersiveSpaceを表示するかどうか
 
-    @Environment(\.openImmersiveSpace) var openImmersiveSpace
-    @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
+    @Environment(\.openImmersiveSpace) var openImmersiveSpace // ImmersiveSpaceを開くのに使う
+    @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace // ImmersiveSpaceを閉じるのに使う
 
     var body: some View {
         NavigationSplitView {
@@ -27,7 +28,7 @@ struct ContentView: View {
                 Model3D(named: "Scene", bundle: realityKitContentBundle)
                     .padding(.bottom, 50)
 
-                Text("Hello, world!")
+                Text("Welcome VisionOS Testbed")
 
                 Toggle("Show ImmersiveSpace", isOn: $showImmersiveSpace)
                     .toggleStyle(.button)
