@@ -13,9 +13,21 @@ struct VisionOSTestbedApp: App {
         WindowGroup {
             ContentView()
         }
+        
+        WindowGroup(id: WindowGroupId.settings.rawValue) {
+            SettingsContentView()
+        }
+        .windowStyle(.plain)
+        .defaultSize(width: 0.5, height: 0.5, depth: 0.1, in: .meters)
 
         ImmersiveSpace(id: "ImmersiveSpace") {
             ImmersiveView()
         }
     }
 }
+
+/// WindowGroupIdを定義する
+enum WindowGroupId: String {
+    case settings = "Settings"
+}
+

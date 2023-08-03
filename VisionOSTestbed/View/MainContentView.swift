@@ -14,6 +14,8 @@ struct MainContentView: View {
     @State private var showImmersiveSpace = false // ImmersiveSpaceを表示するかどうか
     @Environment(\.openImmersiveSpace) var openImmersiveSpace // ImmersiveSpaceを開くのに使う
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace // ImmersiveSpaceを閉じるのに使う
+    @Environment(\.openWindow) private var openWindow // Windowを開くのに使う
+    
 
     var body: some View {
         VStack {
@@ -25,6 +27,11 @@ struct MainContentView: View {
             Toggle("Show ImmersiveSpace", isOn: $showImmersiveSpace)
                 .toggleStyle(.button)
                 .padding(.top, 50)
+            
+            // SettingsContentViewを別のWindowで起動するボタン
+            Button("Show SettingsContentView") {
+                openWindow(id: WindowGroupId.settings.rawValue)
+            }
         }
         .padding()
         .navigationTitle("Main")
@@ -37,5 +44,6 @@ struct MainContentView: View {
                 }
             }
         }
+    
     }
 }
