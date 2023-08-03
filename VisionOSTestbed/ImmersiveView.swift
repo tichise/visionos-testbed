@@ -9,7 +9,7 @@ import SwiftUI
 import RealityKit
 import RealityKitContent
 
-/// ImmersiveView
+/// ImmersiveViewを表示する
 struct ImmersiveView: View {
     var body: some View {
         // RealityViewを使う
@@ -28,5 +28,5 @@ struct ImmersiveView: View {
 
 #Preview {
     ImmersiveView()
-        .previewLayout(.sizeThatFits)
+        .previewLayout(.sizeThatFits) // sizeThatFits は、ビューの内容に基づいて最適なサイズを計算します。
 }
