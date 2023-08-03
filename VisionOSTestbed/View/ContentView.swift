@@ -14,6 +14,20 @@ struct ContentView: View {
     @StateObject var contentViewModel = ContentViewModel()
 
     var body: some View {
+        // TabViewを使う場合
+        TabView(selection: $contentViewModel.tabViewType,
+                content:  {
+            MainContentView().tabItem {
+                Label(TabViewType.main.title, systemImage: TabViewType.main.imageName)
+            }.tag(TabViewType.main)
+            
+            SettingsContentView().tabItem {
+                Label(TabViewType.settings.title, systemImage: TabViewType.settings.imageName)
+            }.tag(TabViewType.settings)
+        })
+
+        
+        /*
         // NavigationSplitViewを使う。NavigationSplitViewは
         NavigationSplitView {
             List {
@@ -38,6 +52,7 @@ struct ContentView: View {
                 SettingsContentView()
             }
         }
+        */
     }
 }
 
