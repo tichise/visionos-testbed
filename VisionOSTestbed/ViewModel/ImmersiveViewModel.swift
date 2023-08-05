@@ -11,12 +11,11 @@ import RealityKit
 // ImmersiveSpace用のViewModel
 class ImmersiveViewModel: ObservableObject {
     
-    /// ModelEntityを生成する
     func generateModelEntity(text: String) -> ModelEntity {
 
         let mesh: MeshResource = .generateText(text,
-                                                           extrusionDepth: 0.1,
-                                                           font: .systemFont(ofSize: 0.2),
+                                                           extrusionDepth: 0.03,
+                                                           font: .systemFont(ofSize: 0.1),
                                                            containerFrame: .zero,
                                                            alignment: .center,
                                                            lineBreakMode: .byWordWrapping) // テキストを生成する
