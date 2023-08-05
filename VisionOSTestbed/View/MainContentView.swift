@@ -28,8 +28,8 @@ struct MainContentView: View {
                 .toggleStyle(.button)
                 .padding(.top, 50)
             
-            // SettingsContentViewを別のWindowで起動するボタン
-            Button("Show SettingsContentView") {
+            // SubContentViewを別のWindowで起動するボタン
+            Button("Show SubContentView") {
                 openWindow(id: WindowGroupId.settings.rawValue)
             }
         }
