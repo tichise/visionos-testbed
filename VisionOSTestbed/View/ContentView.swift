@@ -21,6 +21,10 @@ struct ContentView: View {
                 Label(TabViewType.main.title, systemImage: TabViewType.main.imageName)
             }.tag(TabViewType.main)
             
+            ChatContentView().tabItem {
+                Label(TabViewType.chat.title, systemImage: TabViewType.chat.imageName)
+            }.tag(TabViewType.chat)
+            
             SettingsContentView().tabItem {
                 Label(TabViewType.settings.title, systemImage: TabViewType.settings.imageName)
             }.tag(TabViewType.settings)
