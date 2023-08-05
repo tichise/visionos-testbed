@@ -1,6 +1,9 @@
 # VisionOSTestbed
 This repository is used for the purpose of technical verification of visionOS.
 
+### v0.0.4
+![image](https://github.com/tichise/VisionOSTestbed/assets/43707/6a9952ec-aa54-4de5-b443-6d9f00cd148f)
+
 ### v0.0.3
 https://www.youtube.com/embed/UIuhyEpxcFk
 
