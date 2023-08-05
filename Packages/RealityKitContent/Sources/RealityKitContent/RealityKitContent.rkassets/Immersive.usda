@@ -9,7 +9,7 @@ def Xform "Root"
 {
     reorder nameChildren = ["Sphere_Left", "Sphere_Right", "_PlainMaterial"]
     def Sphere "Sphere_Right" (
-        active = true
+        active = false
         prepend apiSchemas = ["MaterialBindingAPI"]
     )
     {
@@ -24,7 +24,7 @@ def Xform "Root"
     }
 
     def Sphere "Sphere_Left" (
-        active = true
+        active = false
         prepend apiSchemas = ["MaterialBindingAPI"]
     )
     {
@@ -44,6 +44,27 @@ def Xform "Root"
     )
     {
         float3 xformOp:scale = (1, 1, 1)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "sneaker_airforce" (
+        active = false
+        prepend references = @sneaker_airforce.usdz@
+    )
+    {
+        float3 xformOp:scale = (0.016, 0.016, 0.016)
+        float3 xformOp:translate = (0.5, 1.5, -1.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "sneaker_pegasustrail" (
+        active = true
+        prepend references = @sneaker_pegasustrail.usdz@
+    )
+    {
+        quatf xformOp:orient = (1, 0, 0, 0)
+        float3 xformOp:scale = (0.016, 0.016, 0.016)
+        float3 xformOp:translate = (-0.5, 1.5, -1.5072283)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
     }
 }

@@ -12,13 +12,13 @@ struct VisionOSTestbedApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-        }
+        }.defaultSize(width: 0.5, height: 0.5, depth: 0.1, in: .meters)
         
         WindowGroup(id: WindowGroupId.settings.rawValue) {
             SubContentView()
         }
-        .windowStyle(.plain)
-        .defaultSize(width: 0.5, height: 0.5, depth: 0.1, in: .meters)
+        .windowStyle(.automatic)
+        .defaultSize(width: 1, height: 0.5, depth: 0.1, in: .meters)
 
         ImmersiveSpace(id: "ImmersiveSpace") {
             ImmersiveView()
