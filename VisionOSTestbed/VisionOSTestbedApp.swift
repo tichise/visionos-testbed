@@ -17,7 +17,7 @@ struct VisionOSTestbedApp: App {
         WindowGroup(id: WindowGroupId.settings.rawValue) {
             SubContentView()
         }
-        .windowStyle(.plain)
+        .windowStyle(.automatic)
         .defaultSize(width: 0.5, height: 0.5, depth: 0.1, in: .meters)
 
         ImmersiveSpace(id: "ImmersiveSpace") {
