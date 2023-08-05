@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3C672BC22A7E06960042F3B8 /* SubContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C672BC12A7E06960042F3B8 /* SubContentView.swift */; };
+		3C672BC42A7E07900042F3B8 /* ImmersiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C672BC32A7E07900042F3B8 /* ImmersiveViewModel.swift */; };
 		3CFC4F122A7B66EA00DA0507 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 3CFC4F112A7B66EA00DA0507 /* RealityKitContent */; };
 		3CFC4F142A7B66EA00DA0507 /* VisionOSTestbedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4F132A7B66EA00DA0507 /* VisionOSTestbedApp.swift */; };
 		3CFC4F162A7B66EA00DA0507 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4F152A7B66EA00DA0507 /* ContentView.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		3C672BC12A7E06960042F3B8 /* SubContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubContentView.swift; sourceTree = "<group>"; };
+		3C672BC32A7E07900042F3B8 /* ImmersiveViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImmersiveViewModel.swift; sourceTree = "<group>"; };
 		3CFC4F0C2A7B66EA00DA0507 /* VisionOSTestbed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionOSTestbed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CFC4F102A7B66EA00DA0507 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		3CFC4F132A7B66EA00DA0507 /* VisionOSTestbedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOSTestbedApp.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 		3CFC4F312A7B6B2000DA0507 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3C672BC32A7E07900042F3B8 /* ImmersiveViewModel.swift */,
 				3CFC4F362A7B6E4700DA0507 /* ContentViewModel.swift */,
 			);
 			path = ViewModel;
@@ -261,6 +264,7 @@
 				3CFC4F142A7B66EA00DA0507 /* VisionOSTestbedApp.swift in Sources */,
 				3CFC4F3A2A7BC58C00DA0507 /* AppConstants.swift in Sources */,
 				3CFC4F182A7B66EA00DA0507 /* ImmersiveView.swift in Sources */,
+				3C672BC42A7E07900042F3B8 /* ImmersiveViewModel.swift in Sources */,
 				3CFC4F352A7B6BC800DA0507 /* MainContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

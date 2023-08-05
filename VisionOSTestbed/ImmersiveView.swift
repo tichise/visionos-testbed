@@ -11,6 +11,10 @@ import RealityKitContent
 
 /// ImmersiveViewを表示する
 struct ImmersiveView: View {
+    @StateObject var immersiveViewModel = ImmersiveViewModel()
+    
+    private var entity = Entity()
+
     var body: some View {
         // RealityViewを使う
         
@@ -21,6 +25,10 @@ struct ImmersiveView: View {
             // RealityKitコンテンツの追加
             if let scene = try? await Entity(named: "Immersive", in: realityKitContentBundle) {
                 content.add(scene)
+                
+                content.add(entity)
+                let modelEntity = immersiveViewModel.generateModelEntity(text: "Shoes")
+                entity.addChild(modelEntity) // ContentEntityにテキストを追加する
             }
         }
     }
