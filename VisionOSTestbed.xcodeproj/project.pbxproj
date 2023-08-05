@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C672BC22A7E06960042F3B8 /* SubContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C672BC12A7E06960042F3B8 /* SubContentView.swift */; };
 		3CFC4F122A7B66EA00DA0507 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 3CFC4F112A7B66EA00DA0507 /* RealityKitContent */; };
 		3CFC4F142A7B66EA00DA0507 /* VisionOSTestbedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4F132A7B66EA00DA0507 /* VisionOSTestbedApp.swift */; };
 		3CFC4F162A7B66EA00DA0507 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4F152A7B66EA00DA0507 /* ContentView.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C672BC12A7E06960042F3B8 /* SubContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubContentView.swift; sourceTree = "<group>"; };
 		3CFC4F0C2A7B66EA00DA0507 /* VisionOSTestbed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionOSTestbed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CFC4F102A7B66EA00DA0507 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		3CFC4F132A7B66EA00DA0507 /* VisionOSTestbedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOSTestbedApp.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			children = (
 				3CFC4F152A7B66EA00DA0507 /* ContentView.swift */,
 				3CFC4F342A7B6BC800DA0507 /* MainContentView.swift */,
+				3C672BC12A7E06960042F3B8 /* SubContentView.swift */,
 				3CFC4F322A7B6B4800DA0507 /* SettingsContentView.swift */,
 			);
 			path = View;
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CFC4F162A7B66EA00DA0507 /* ContentView.swift in Sources */,
+				3C672BC22A7E06960042F3B8 /* SubContentView.swift in Sources */,
 				3CFC4F332A7B6B4800DA0507 /* SettingsContentView.swift in Sources */,
 				3CFC4F372A7B6E4700DA0507 /* ContentViewModel.swift in Sources */,
 				3CFC4F142A7B66EA00DA0507 /* VisionOSTestbedApp.swift in Sources */,

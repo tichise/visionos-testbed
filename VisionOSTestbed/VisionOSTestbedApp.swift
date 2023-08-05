@@ -15,7 +15,7 @@ struct VisionOSTestbedApp: App {
         }
         
         WindowGroup(id: WindowGroupId.settings.rawValue) {
-            SettingsContentView()
+            SubContentView()
         }
         .windowStyle(.plain)
         .defaultSize(width: 0.5, height: 0.5, depth: 0.1, in: .meters)
