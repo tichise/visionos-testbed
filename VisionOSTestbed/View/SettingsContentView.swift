@@ -20,7 +20,7 @@ struct SettingsContentView: View {
                     SecureField("", text: $chatGPTSecretKey).textFieldStyle(.roundedBorder)
                 }.padding(.top, 50)
                 
-                Button("SecretKeyを取得する") {
+                Button("Get SecretKey") {
                     // https://platform.openai.com/account/api-keysをブラウザで開く
                     if let url = URL(string: "https://platform.openai.com/account/api-keys") {
                         UIApplication.shared.open(url)
