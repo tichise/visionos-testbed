@@ -7,7 +7,7 @@ import OpenAI
 import Combine
 
 /// OpenAI用のViewModel
-final class ChatViewModel: ObservableObject {
+final class OpenAIViewModel: ObservableObject {
     
     public var openAI: OpenAI?
     
@@ -22,10 +22,6 @@ final class ChatViewModel: ObservableObject {
     ///  - content: プロンプト
     ///
     func sendChat(content: String) {
-        // @AppStorage(AppConstants.chatGPTSecretKey)で保存した値を取得する
-        let apiToken = UserDefaults.standard.string(forKey: AppConstants.chatGPTSecretKey) ?? ""
-        
-        
         let openAI = OpenAI(apiToken: apiToken)
         let query = ChatQuery(model: .gpt3_5Turbo, messages: [.init(role: .user, content: content)])
 
