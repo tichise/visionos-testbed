@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C2296BA2A7E981700B50050 /* OpenAIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2296B92A7E981700B50050 /* OpenAIViewModel.swift */; };
+		3C2296BD2A7E9B8600B50050 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 3C2296BC2A7E9B8600B50050 /* OpenAI */; };
+		3C2296BF2A7E9D3100B50050 /* ChatContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2296BE2A7E9D3100B50050 /* ChatContentView.swift */; };
+		3C66A94E2A7FA57C0048989D /* ChatGPTUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3C66A94D2A7FA57C0048989D /* ChatGPTUI */; };
 		3C672BC22A7E06960042F3B8 /* SubContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C672BC12A7E06960042F3B8 /* SubContentView.swift */; };
 		3C672BC42A7E07900042F3B8 /* ImmersiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C672BC32A7E07900042F3B8 /* ImmersiveViewModel.swift */; };
 		3CFC4F122A7B66EA00DA0507 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 3CFC4F112A7B66EA00DA0507 /* RealityKitContent */; };
@@ -33,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C2296B92A7E981700B50050 /* OpenAIViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAIViewModel.swift; sourceTree = "<group>"; };
+		3C2296BE2A7E9D3100B50050 /* ChatContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatContentView.swift; sourceTree = "<group>"; };
 		3C672BC12A7E06960042F3B8 /* SubContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubContentView.swift; sourceTree = "<group>"; };
 		3C672BC32A7E07900042F3B8 /* ImmersiveViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImmersiveViewModel.swift; sourceTree = "<group>"; };
 		3CFC4F0C2A7B66EA00DA0507 /* VisionOSTestbed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionOSTestbed.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C2296BD2A7E9B8600B50050 /* OpenAI in Frameworks */,
+				3C66A94E2A7FA57C0048989D /* ChatGPTUI in Frameworks */,
 				3CFC4F122A7B66EA00DA0507 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +77,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C5DF9822A7F3C08002416A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CE26A5A2A7F2E990056AE0C /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Store;
+			path = View/Store;
+			sourceTree = "<group>";
+		};
 		3CFC4F032A7B66EA00DA0507 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +99,7 @@
 				3CFC4F0F2A7B66EA00DA0507 /* Packages */,
 				3CFC4F252A7B66ED00DA0507 /* VisionOSTestbedTests */,
 				3CFC4F0D2A7B66EA00DA0507 /* Products */,
+				3C5DF9822A7F3C08002416A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +119,7 @@
 				3CFC4F132A7B66EA00DA0507 /* VisionOSTestbedApp.swift */,
 				3CFC4F172A7B66EA00DA0507 /* ImmersiveView.swift */,
 				3CFC4F192A7B66ED00DA0507 /* Assets.xcassets */,
+				3CE26A5A2A7F2E990056AE0C /* Store */,
 				3CFC4F302A7B6B1100DA0507 /* View */,
 				3CFC4F312A7B6B2000DA0507 /* ViewModel */,
 				3CFC4F1B2A7B66ED00DA0507 /* Preview Content */,
@@ -132,6 +157,7 @@
 				3CFC4F152A7B66EA00DA0507 /* ContentView.swift */,
 				3CFC4F342A7B6BC800DA0507 /* MainContentView.swift */,
 				3C672BC12A7E06960042F3B8 /* SubContentView.swift */,
+				3C2296BE2A7E9D3100B50050 /* ChatContentView.swift */,
 				3CFC4F322A7B6B4800DA0507 /* SettingsContentView.swift */,
 			);
 			path = View;
@@ -140,6 +166,7 @@
 		3CFC4F312A7B6B2000DA0507 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3C2296B92A7E981700B50050 /* OpenAIViewModel.swift */,
 				3C672BC32A7E07900042F3B8 /* ImmersiveViewModel.swift */,
 				3CFC4F362A7B6E4700DA0507 /* ContentViewModel.swift */,
 			);
@@ -172,6 +199,8 @@
 			name = VisionOSTestbed;
 			packageProductDependencies = (
 				3CFC4F112A7B66EA00DA0507 /* RealityKitContent */,
+				3C2296BC2A7E9B8600B50050 /* OpenAI */,
+				3C66A94D2A7FA57C0048989D /* ChatGPTUI */,
 			);
 			productName = VisionOSTestbed;
 			productReference = 3CFC4F0C2A7B66EA00DA0507 /* VisionOSTestbed.app */;
@@ -223,6 +252,10 @@
 				Base,
 			);
 			mainGroup = 3CFC4F032A7B66EA00DA0507;
+			packageReferences = (
+				3C2296BB2A7E9B8600B50050 /* XCRemoteSwiftPackageReference "OpenAI" */,
+				3C66A94C2A7FA57C0048989D /* XCRemoteSwiftPackageReference "ChatGPTUI" */,
+			);
 			productRefGroup = 3CFC4F0D2A7B66EA00DA0507 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,9 +293,11 @@
 				3CFC4F162A7B66EA00DA0507 /* ContentView.swift in Sources */,
 				3C672BC22A7E06960042F3B8 /* SubContentView.swift in Sources */,
 				3CFC4F332A7B6B4800DA0507 /* SettingsContentView.swift in Sources */,
+				3C2296BF2A7E9D3100B50050 /* ChatContentView.swift in Sources */,
 				3CFC4F372A7B6E4700DA0507 /* ContentViewModel.swift in Sources */,
 				3CFC4F142A7B66EA00DA0507 /* VisionOSTestbedApp.swift in Sources */,
 				3CFC4F3A2A7BC58C00DA0507 /* AppConstants.swift in Sources */,
+				3C2296BA2A7E981700B50050 /* OpenAIViewModel.swift in Sources */,
 				3CFC4F182A7B66EA00DA0507 /* ImmersiveView.swift in Sources */,
 				3C672BC42A7E07900042F3B8 /* ImmersiveViewModel.swift in Sources */,
 				3CFC4F352A7B6BC800DA0507 /* MainContentView.swift in Sources */,
@@ -533,7 +568,36 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		3C2296BB2A7E9B8600B50050 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.3;
+			};
+		};
+		3C66A94C2A7FA57C0048989D /* XCRemoteSwiftPackageReference "ChatGPTUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tichise/ChatGPTUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		3C2296BC2A7E9B8600B50050 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C2296BB2A7E9B8600B50050 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+		3C66A94D2A7FA57C0048989D /* ChatGPTUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C66A94C2A7FA57C0048989D /* XCRemoteSwiftPackageReference "ChatGPTUI" */;
+			productName = ChatGPTUI;
+		};
 		3CFC4F112A7B66EA00DA0507 /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;

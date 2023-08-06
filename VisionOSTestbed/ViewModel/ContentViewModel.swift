@@ -16,6 +16,7 @@ class ContentViewModel: ObservableObject {
 
 enum TabViewType: String, Identifiable, CaseIterable {
     case main = "main"
+    case chat = "chat"
     case settings = "settings"
 
     var id: String {
@@ -28,6 +29,8 @@ enum TabViewType: String, Identifiable, CaseIterable {
             return "Main"
         case .settings:
             return "Settings"
+        case .chat:
+            return "Chat"
         }
     }
     
@@ -37,6 +40,8 @@ enum TabViewType: String, Identifiable, CaseIterable {
             return "figure.wave"
         case .settings:
             return "gear"
+        case .chat:
+            return "bubble.left.and.bubble.right"
         }
     }
 }
