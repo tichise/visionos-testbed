@@ -16,7 +16,7 @@ struct SettingsContentView: View {
             Section(header: Text("ChatGPT")) {
                 // ChatGPTのAPIトークンを編集してUserDefaultsに保存できるようにする
                 HStack {
-                    Text("ChatGPT SecretKey")
+                    Text("SecretKey")
                     SecureField("", text: $chatGPTSecretKey).textFieldStyle(.roundedBorder)
                 }.padding(.top, 50)
                 
