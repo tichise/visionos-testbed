@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "chatgptui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tichise/ChatGPTUI",
+      "state" : {
+        "revision" : "fce2a896d0f0d4647529eba53b81b047fe001018",
+        "version" : "1.0.0"
+      }
+    },
+    {
       "identity" : "openai",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/MacPaw/OpenAI.git",
