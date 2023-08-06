@@ -19,8 +19,8 @@ final class ChatViewModel: ObservableObject {
 
     /// OpenAPIにプロンプトを送信して、解答を取得する
     /// - Parameters:
-    ///  - prompt: プロンプト
-    ///  - maxTokens: 最大トークン数
+    ///  - content: プロンプト
+    ///
     func sendChat(content: String) {
         // @AppStorage(AppConstants.chatGPTSecretKey)で保存した値を取得する
         let apiToken = UserDefaults.standard.string(forKey: AppConstants.chatGPTSecretKey) ?? ""
