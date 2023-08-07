@@ -15,9 +15,9 @@ struct MainContentView: View {
 
     var body: some View {
         VStack {
-            // SubContentViewを別のWindowで起動するボタン
-            Button("Open Window") {
-                openWindow(id: WindowGroupId.settings.rawValue)
+            // Chatを別のWindowで起動するボタン
+            Button("Open Chat") {
+                openWindow(id: WindowGroupId.chat.rawValue)
             }
         }
         .padding()

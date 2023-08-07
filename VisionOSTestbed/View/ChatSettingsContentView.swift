@@ -1,5 +1,5 @@
 //
-//  SettingsContentView.swift
+//  ChatSettingsContentView.swift
 //  VisionOSTestbed
 //
 //  Created by tichise on 2023/08/03.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 // 設定画面
-struct SettingsContentView: View {
+struct ChatSettingsContentView: View {
     var body: some View {
         @AppStorage(AppConstants.chatGPTSecretKey) var chatGPTSecretKey = ""
 
