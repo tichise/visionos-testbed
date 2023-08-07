@@ -15,8 +15,8 @@ struct VisionOSTestbedApp: App {
         }.windowStyle(.automatic)
             .defaultSize(width: 0.5, height: 0.5, depth: 0.1, in: .meters)
         
-        WindowGroup(id: WindowGroupId.settings.rawValue) {
-            SubContentView()
+        WindowGroup(id: WindowGroupId.chat.rawValue) {
+            ChatContentView()
         }
         .windowStyle(.automatic)
         .defaultSize(width: 1, height: 0.5, depth: 0.1, in: .meters)
@@ -29,6 +29,6 @@ struct VisionOSTestbedApp: App {
 
 /// WindowGroupIdを定義する
 enum WindowGroupId: String {
-    case settings = "Settings"
+    case chat = "Chat"
 }
 
