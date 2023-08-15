@@ -1,4 +1,4 @@
-# VisionOSTestbed
+# visionos-testbed
 This repository is used for the purpose of technical verification of visionOS.
 
 ### v0.0.5
