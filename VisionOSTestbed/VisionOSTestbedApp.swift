@@ -24,11 +24,18 @@ struct VisionOSTestbedApp: App {
         ImmersiveSpace(id: "ImmersiveSpace") {
             ImmersiveView()
         }
+        
+        WindowGroup(id: WindowGroupId.item.rawValue) {
+            ItemView()
+        }
+        .windowStyle(.volumetric)
+        .defaultSize(width: 1, height: 1, depth: 1, in: .meters)
     }
 }
 
 /// WindowGroupIdを定義する
 enum WindowGroupId: String {
     case chat = "Chat"
+    case item = "Item"
 }
 

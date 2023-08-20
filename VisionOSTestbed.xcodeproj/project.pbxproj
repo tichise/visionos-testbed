@@ -12,7 +12,9 @@
 		3C2296BF2A7E9D3100B50050 /* ChatContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2296BE2A7E9D3100B50050 /* ChatContentView.swift */; };
 		3C672BC22A7E06960042F3B8 /* SubContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C672BC12A7E06960042F3B8 /* SubContentView.swift */; };
 		3C672BC42A7E07900042F3B8 /* ImmersiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C672BC32A7E07900042F3B8 /* ImmersiveViewModel.swift */; };
-		3C95C7DE2A811C2F0070F3D3 /* ChatGPTUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3C95C7DD2A811C2F0070F3D3 /* ChatGPTUI */; };
+		3C95C7E02A811D440070F3D3 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C95C7DF2A811D440070F3D3 /* ItemView.swift */; };
+		3C95C7E22A8125310070F3D3 /* AirForce.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3C95C7E12A8125310070F3D3 /* AirForce.usdz */; };
+		3CE2B7F82A91F8F500CABF7D /* ChatGPTUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3CE2B7F72A91F8F500CABF7D /* ChatGPTUI */; };
 		3CFC4F122A7B66EA00DA0507 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 3CFC4F112A7B66EA00DA0507 /* RealityKitContent */; };
 		3CFC4F142A7B66EA00DA0507 /* VisionOSTestbedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4F132A7B66EA00DA0507 /* VisionOSTestbedApp.swift */; };
 		3CFC4F162A7B66EA00DA0507 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4F152A7B66EA00DA0507 /* ContentView.swift */; };
@@ -41,6 +43,8 @@
 		3C2296BE2A7E9D3100B50050 /* ChatContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatContentView.swift; sourceTree = "<group>"; };
 		3C672BC12A7E06960042F3B8 /* SubContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubContentView.swift; sourceTree = "<group>"; };
 		3C672BC32A7E07900042F3B8 /* ImmersiveViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImmersiveViewModel.swift; sourceTree = "<group>"; };
+		3C95C7DF2A811D440070F3D3 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		3C95C7E12A8125310070F3D3 /* AirForce.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = AirForce.usdz; sourceTree = "<group>"; };
 		3CFC4F0C2A7B66EA00DA0507 /* VisionOSTestbed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionOSTestbed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CFC4F102A7B66EA00DA0507 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		3CFC4F132A7B66EA00DA0507 /* VisionOSTestbedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOSTestbedApp.swift; sourceTree = "<group>"; };
@@ -62,7 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C2296BD2A7E9B8600B50050 /* OpenAI in Frameworks */,
-				3C95C7DE2A811C2F0070F3D3 /* ChatGPTUI in Frameworks */,
+				3CE2B7F82A91F8F500CABF7D /* ChatGPTUI in Frameworks */,
 				3CFC4F122A7B66EA00DA0507 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,17 +88,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3CE26A5A2A7F2E990056AE0C /* Store */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Store;
-			path = View/Store;
-			sourceTree = "<group>";
-		};
 		3CFC4F032A7B66EA00DA0507 = {
 			isa = PBXGroup;
 			children = (
+				3C95C7E12A8125310070F3D3 /* AirForce.usdz */,
 				3CFC4F0E2A7B66EA00DA0507 /* VisionOSTestbed */,
 				3CFC4F0F2A7B66EA00DA0507 /* Packages */,
 				3CFC4F252A7B66ED00DA0507 /* VisionOSTestbedTests */,
@@ -119,7 +116,6 @@
 				3CFC4F132A7B66EA00DA0507 /* VisionOSTestbedApp.swift */,
 				3CFC4F172A7B66EA00DA0507 /* ImmersiveView.swift */,
 				3CFC4F192A7B66ED00DA0507 /* Assets.xcassets */,
-				3CE26A5A2A7F2E990056AE0C /* Store */,
 				3CFC4F302A7B6B1100DA0507 /* View */,
 				3CFC4F312A7B6B2000DA0507 /* ViewModel */,
 				3CFC4F1B2A7B66ED00DA0507 /* Preview Content */,
@@ -157,6 +153,7 @@
 				3CFC4F152A7B66EA00DA0507 /* ContentView.swift */,
 				3CFC4F342A7B6BC800DA0507 /* MainContentView.swift */,
 				3C672BC12A7E06960042F3B8 /* SubContentView.swift */,
+				3C95C7DF2A811D440070F3D3 /* ItemView.swift */,
 				3C2296BE2A7E9D3100B50050 /* ChatContentView.swift */,
 				3CFC4F322A7B6B4800DA0507 /* ChatSettingsContentView.swift */,
 			);
@@ -200,7 +197,7 @@
 			packageProductDependencies = (
 				3CFC4F112A7B66EA00DA0507 /* RealityKitContent */,
 				3C2296BC2A7E9B8600B50050 /* OpenAI */,
-				3C95C7DD2A811C2F0070F3D3 /* ChatGPTUI */,
+				3CE2B7F72A91F8F500CABF7D /* ChatGPTUI */,
 			);
 			productName = VisionOSTestbed;
 			productReference = 3CFC4F0C2A7B66EA00DA0507 /* VisionOSTestbed.app */;
@@ -254,7 +251,7 @@
 			mainGroup = 3CFC4F032A7B66EA00DA0507;
 			packageReferences = (
 				3C2296BB2A7E9B8600B50050 /* XCRemoteSwiftPackageReference "OpenAI" */,
-				3C95C7DC2A811C2F0070F3D3 /* XCRemoteSwiftPackageReference "ChatGPTUI" */,
+				3CE2B7F62A91F8F500CABF7D /* XCRemoteSwiftPackageReference "ChatGPTUI" */,
 			);
 			productRefGroup = 3CFC4F0D2A7B66EA00DA0507 /* Products */;
 			projectDirPath = "";
@@ -273,6 +270,7 @@
 			files = (
 				3CFC4F1D2A7B66ED00DA0507 /* Preview Assets.xcassets in Resources */,
 				3CFC4F1A2A7B66ED00DA0507 /* Assets.xcassets in Resources */,
+				3C95C7E22A8125310070F3D3 /* AirForce.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +295,7 @@
 				3CFC4F372A7B6E4700DA0507 /* ContentViewModel.swift in Sources */,
 				3CFC4F142A7B66EA00DA0507 /* VisionOSTestbedApp.swift in Sources */,
 				3CFC4F3A2A7BC58C00DA0507 /* AppConstants.swift in Sources */,
+				3C95C7E02A811D440070F3D3 /* ItemView.swift in Sources */,
 				3C2296BA2A7E981700B50050 /* OpenAIViewModel.swift in Sources */,
 				3CFC4F182A7B66EA00DA0507 /* ImmersiveView.swift in Sources */,
 				3C672BC42A7E07900042F3B8 /* ImmersiveViewModel.swift in Sources */,
@@ -577,12 +576,12 @@
 				minimumVersion = 0.2.3;
 			};
 		};
-		3C95C7DC2A811C2F0070F3D3 /* XCRemoteSwiftPackageReference "ChatGPTUI" */ = {
+		3CE2B7F62A91F8F500CABF7D /* XCRemoteSwiftPackageReference "ChatGPTUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/tichise/ChatGPTUI";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.0.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -593,9 +592,9 @@
 			package = 3C2296BB2A7E9B8600B50050 /* XCRemoteSwiftPackageReference "OpenAI" */;
 			productName = OpenAI;
 		};
-		3C95C7DD2A811C2F0070F3D3 /* ChatGPTUI */ = {
+		3CE2B7F72A91F8F500CABF7D /* ChatGPTUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3C95C7DC2A811C2F0070F3D3 /* XCRemoteSwiftPackageReference "ChatGPTUI" */;
+			package = 3CE2B7F62A91F8F500CABF7D /* XCRemoteSwiftPackageReference "ChatGPTUI" */;
 			productName = ChatGPTUI;
 		};
 		3CFC4F112A7B66EA00DA0507 /* RealityKitContent */ = {

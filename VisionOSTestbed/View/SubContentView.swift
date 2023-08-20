@@ -17,6 +17,8 @@ struct Sneaker: Codable {
 
 struct SubContentView: View {
     @State private var showImmersiveSpace = false // ImmersiveSpaceを表示するかどうか
+    @Environment(\.openWindow) private var openWindow // Windowを開くのに使う
+
     @Environment(\.openImmersiveSpace) var openImmersiveSpace // ImmersiveSpaceを開くのに使う
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace // ImmersiveSpaceを閉じるのに使う
     
@@ -49,6 +51,10 @@ struct SubContentView: View {
                         Toggle("Open", isOn: $showImmersiveSpace)
                             .toggleStyle(.button)
                             .padding(.top, 50)
+                        
+                        Button("Open Item") {
+                            openWindow(id: WindowGroupId.item.rawValue)
+                        }
                          
                     }
                 }
