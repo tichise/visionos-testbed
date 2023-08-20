@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tichise/ChatGPTUI",
       "state" : {
-        "revision" : "fce2a896d0f0d4647529eba53b81b047fe001018",
-        "version" : "1.0.0"
+        "revision" : "294cf47925afaa348c7c9187702c9dc4c3863396",
+        "version" : "1.0.1"
       }
     },
     {
