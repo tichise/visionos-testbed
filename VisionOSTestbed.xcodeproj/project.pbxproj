@@ -574,7 +574,7 @@
 			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.3;
+				minimumVersion = 0.2.6;
 			};
 		};
 		3C95C7DC2A811C2F0070F3D3 /* XCRemoteSwiftPackageReference "ChatGPTUI" */ = {
@@ -582,7 +582,7 @@
 			repositoryURL = "https://github.com/tichise/ChatGPTUI";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

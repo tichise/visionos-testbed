@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tichise/ChatGPTUI",
       "state" : {
-        "revision" : "294cf47925afaa348c7c9187702c9dc4c3863396",
-        "version" : "1.0.1"
+        "revision" : "f3ff0d76beff94f2220d141a8525c9d694fba456",
+        "version" : "1.1.0"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/MacPaw/OpenAI.git",
       "state" : {
-        "revision" : "a51a7fde78173e57b9166d38d1f665d17a3c4383",
-        "version" : "0.2.3"
+        "revision" : "35afc9a6ee127b8f22a85a31aec2036a987478af",
+        "version" : "0.2.6"
       }
     },
     {
